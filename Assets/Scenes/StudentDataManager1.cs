@@ -9,7 +9,7 @@ public class StudentDataManager1 : MonoBehaviour
     public InputField ageInput;
     public InputField studentNumberInput;
     public InputField studentSection;
-
+    public InputField studentNumber;
     public InputField searchInput;
 
     public Text resultText;
@@ -24,7 +24,7 @@ public class StudentDataManager1 : MonoBehaviour
         //check if fields are not empty and parse values
         if (!string.IsNullOrEmpty(studentName) &&
             int.TryParse(ageInput.text, out age) &&
-             int.TryParse(studentNumberInput.text, out age) &&
+             int.TryParse(studentNumberInput.text, out studentNumber) &&
               int.TryParse(studentSection.text, out age))
         {
             //save data in playerprefs
